@@ -1,0 +1,117 @@
+<html lang="de">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Entermannschaft</title>
+  </head> 
+  <style>
+    #pic{
+      background: url(Bilder/0.Banner/11.Raumschiffe.jpg) center no-repeat ;
+      background-size: cover;
+      height: 400px;
+      overflow: hidden;
+    }
+  </style>
+  <body>
+    <div id="pic" class="d-none d-sm-block"></div>
+    <!-- NAVIGATIONSLEISTE -->
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="navbar navbar-expand-md navbar-light sticky-top" style="background-color: rgba(15, 90, 143, 0.822);">
+          <div class="container-fluid">
+            <span class="navbar-brand"></span>
+                <div id=menue class="collapse navbar-collapse">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <b>Galaxisbereiche</b>
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="index.html">Galaxiskarte</a></li>
+                        <li><a class="dropdown-item" href="1.0 Kernwelten.html">Kernwelten</a></li>
+                        <li><a class="dropdown-item" href="2.0 Innerer Rand.html">Innerer Rand</a></li>
+                        <li><a class="dropdown-item" href="3.0 Mittlerer Rand.html">Mittlerer Rand</a></li>
+                        <li><a class="dropdown-item" href="4.0 Expansionsgebiet.html">Expansionsgebiet</a></li>
+                        <li><a class="dropdown-item" href="5.0 Unbekannte Regionen.html">Unbekannte Regionen</a></li>
+                        <li><a class="dropdown-item" href="6.0 Wilder Raum.html">Wilder Raum</a></li>
+                        <li><a class="dropdown-item" href="7.0 Sitz des Imperiums.html">Sitz des Imperiums</a></li>  
+                        <li><a class="dropdown-item" href="8.0 Äußerer Rand.html">Äußerer Rand</a></li>
+                        <li><a class="dropdown-item" href="9.0 Huttenraum.html">Huttenraum</a></li>
+                        <li><a class="dropdown-item" href="10.0 Asteroiden.html">Asteroiden in der Galaxis</a></li>
+                        <li><a class="dropdown-item" href="11.0 Raumschiffe in der Galaxis.html">Raumschiffe in der Galaxis</a></li> 
+                      </ul>
+                    </li>
+                    </li>
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
+                      </form>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+        </div>
+        <!-- Karte 1 -->
+        <div class="card-group">
+          <div class="row"></div>
+            <div class="card w-150">
+            <div class="card-body" style="width: 101.2%; height: 35rem; background-color: rgba(71, 68, 68, 0.829);">
+              <h5 class="card-title">Raumschiffkodex der White Nova</h5>
+              <a href="11.0 Raumschiffe in der Galaxis.html"><img class="card-img-top" src="Bilder/11.Raumschiffe/2.White_Nova.webp" alt="Card image" style="width: 18rem; height: 10rem"></a>
+              <p class="card-text"><small class="text-warning">Letztes Update 06.08.2021</small></p>
+              <p class="card-text"></p>
+              <table class="table table-bordered border-dark" style="width: 85%; height: 10rem; background-color: rgba(247, 247, 248, 0.877);">
+                <thead>
+                  <tr>
+                    <th scope="col">Kategorie</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Koordinate</th>
+                    <th scope="col">Hinweise</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th colspan="4">Patch 1.0: SWTOR Startpatch</th>
+                  </tr>
+                  <tr>
+                    <th>Erfolg: Epischer Feind</th>
+                    <td>Angriffstrupp-Veteran</td>
+                    <td>?,?</td>
+                    <td>Besiege den Angriffstrupp-Veteran.</td>
+                  </tr>
+                  <tr>
+                    <th>Organisationen</th>
+                    <td>Die Republikanische Marine</td>
+                    <td>?,?</td>
+                    <td>Schließe den Flashpoint ab.</td>
+                  </tr>
+                  <tr>
+                    <th>Wissen</th>
+                    <td>Imperiale Enterprotokolle</td>
+                    <td>0,0</td>
+                    <td>Schließe den Flashpoint und die Bonusmissionen ab.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <script>
+          $(".nav-item").click(function(){$("#menue").collapse('hide');
+          $("#menue .bg-primary").removeClass(".bg-primary");
+          $(this).addClass("bg-primary");
+        })
+          $(".dropdown").click(function(){
+          if(!$(this).hasClass("show")) return;
+            $("#menue li>bg-primary").removeClass("bg-primary");
+            $(this).addClass("bg-primary");
+          })
+        </script>
+      </body>
+    </html>
